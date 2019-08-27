@@ -1,0 +1,100 @@
+.navbarOverride {
+    float:none;
+    vertical-align:top;
+    text-align:center;
+    margin:2% 0 2%;
+    color:white;
+    
+}
+
+
+.navbar-text{
+    background:tan;
+    font-size: 50px;
+    font-weight:bold;
+    font-family: 'Indie Flower', cursive;
+    text-decoration:underline;
+    color:white;
+    padding: 0 1%;
+    width:40%;
+    opacity:.85;
+    border-radius:25px;
+    border:solid grey 5px;
+}
+
+body{
+    background: url('http://www.sclance.com/backgrounds/ocarina-of-time-background/ocarina-of-time-background_1626242.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+
+#listRupee{
+    width:15%;
+}
+
+#instruction{
+    margin-top:5%;
+    font-size:25px;
+}
+
+#objective, .scoreHeaders{
+    color:white;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration:underline;
+    font-family: 'Indie Flower', cursive;
+}
+
+.btnOverride{
+    width: 30%;
+    font-size: 30px;
+    background:grey;
+    margin-top:4%;
+    padding-bottom:1%;
+    border-radius:25px;
+    border:solid white 3px;
+    font-weight:bold;
+    font-family: 'Indie Flower', cursive;
+
+}
+
+.scoreHeaders{
+    margin-left:8%;
+}
+
+#wins, #losses, #yourNumber, #randomNumber{
+    text-decoration:none;
+    margin-left:10%;
+}
+
+#instructions{
+    background:tan;
+    color:white;
+    padding: 2%;
+    opacity: .85;
+    border-radius:25px;
+    font-family: 'Indie Flower', cursive;
+    font-size:30px;
+    line-height:30px;
+    border:solid grey 5px;
+  }
+
+  #gameContainer{
+    background:tan;
+    padding: 2%;
+    border-radius:25px;
+    opacity:.85;
+    border:solid grey 5px;
+  }
+
+  .rupee{
+      width:80%;
+      opacity:1;
+  }
+
+  .test{
+    opacity: 1;
+}
