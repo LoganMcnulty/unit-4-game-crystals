@@ -55,54 +55,57 @@
                 <div class="row justify-content-around">
                     <button type="button" class="btnOverride" style="margin-top:0">
                         Wins 
-                        <span class="badge badge-light">0</span>
+                        <span class="badge badge-light wins">0</span>
                     </button>
                     <button type="button" class="btnOverride" style="margin-top:0">
                         Losses 
-                        <span class="badge badge-light">0</span>
+                        <span class="badge badge-light wins">0</span>
                     </button>
                 </div>
 
                 <div class="row justify-content-around">
                     <button type="button" class="btnOverride" style="width:35%">
                         Rupees To Win 
-                        <span class="badge badge-light">0</span>
+                        <span class="badge badge-light winningNumber">0</span>
                     </button>
                     <button type="button" class="btnOverride" style="width:35%">
                         Rupees Collected 
-                        <span class="badge badge-light">0</span>
+                        <span class="badge badge-light userNumberSum">0</span>
                     </button>
                 </div>
 
                 <div class="row justify-content-around" style="opacity:1">
-                    <button type="button" class="btnOverride" style="width:20%">
-                        <img class="rupee" id="redRupee" src="assets/images/blue_rupee.png">
+                    <button type="button" class="btnOverride blueRupee" style="width:20%">
+                        <img class="rupee" id="blueRupee" src="assets/images/blue_rupee.png">
                     </button>
 
-                    <button type="button" class="btnOverride" style="width:20%;">
+                    <button type="button" class="btnOverride redRupee" style="width:20%;">
                         <img class="rupee" id="redRupee" src="assets/images/red_rupee.png">
                     </button>
         
-                    <button type="button" class="btnOverride" style="width:20%">
-                        <img class="rupee" id="redRupee" src="assets/images/white_rupee.png"> 
+                    <button type="button" class="btnOverride whiteRupee" style="width:20%">
+                        <img class="rupee" id="whiteRupee" src="assets/images/white_rupee.png"> 
                     </button>
 
-                    <button type="button" class="btnOverride test" style="width:20%">
-                        <img class="rupee" id="redRupee" src="assets/images/green_rupee.png">
+                    <button type="button" class="btnOverride test greenRupee" style="width:20%">
+                        <img class="rupee" id="greenRupee" src="assets/images/green_rupee.png">
                     </button>
                 </div>
 
         </div>
     </div>
 
-        
+
 <!--Boot Strap JQuery-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
                     
-<!-- Always run the javascript at the end, after the HTML has loaded-->
-<!-- <script src="assets/javascript/game_old.js"></script> -->
+<!-- jQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Script -->
+<script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </body>
 </html>
