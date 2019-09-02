@@ -31,8 +31,6 @@ var themeMusic = new Audio("assets/sounds/Title_Theme.mp3");
 }
     //buttons that send rupee value to HTML
     //need to have code that says "every time a rupee is clicked, check to see if we now match the winning criteria"
-    // maybe i could have a function defined below the rupees, and call that function each time a rupee is clicked
-    // ok so this worked but now, each now game, it is counting the new rupee value twice. I.e. game 1 = value. Game 2 = Value + Value. Game 3 = Value + Value + value
         
     // each click, run the function matching that rupee
         $(".blueRupee").on("click", blueRupee);
