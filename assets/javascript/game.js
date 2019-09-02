@@ -9,10 +9,12 @@ var whiteRupeeStart = 0;
 var redRupeeStart = 0;
 var wins = 0;
 var losses = 0;
+var rupeeSound = new Audio("assets/sounds/get_rupee.wav");
+var themeMusic = new Audio("assets/sounds/Title_Theme.mp3");
 
 //startGame function
     function startGame(){
-
+        
     //assign rupees and winning number random values
     // +10 on winning number to ensure it's always larger than largest rupee
     // +1 on rupees to ensure they are never 0
@@ -26,49 +28,66 @@ var losses = 0;
     //push winning number to HTML
         $(".winningNumber").text(winningNumber);
 
+}
     //buttons that send rupee value to HTML
     //need to have code that says "every time a rupee is clicked, check to see if we now match the winning criteria"
     // maybe i could have a function defined below the rupees, and call that function each time a rupee is clicked
     // ok so this worked but now, each now game, it is counting the new rupee value twice. I.e. game 1 = value. Game 2 = Value + Value. Game 3 = Value + Value + value
         
-        // each click, run the function matching that rupee
+    // each click, run the function matching that rupee
         $(".blueRupee").on("click", blueRupee);
 
             function blueRupee () {
+                //this is a really weird work around I did to get theme music to play upon first click 
+                    if (wins === 0 && losses === 0){
+                    themeMusic.play();
+                    }
+
+                rupeeSound.play();
                 userNumberSum = userNumberSum + blueRupeeStart;
+                console.log('user number sum: ' + userNumberSum);
                 $(".userNumberSum").text(userNumberSum);
                 checkNumbers();
-                console.log('user number sum: ' + userNumberSum);
             }
 
         $(".redRupee").on("click", redRupee);
 
             function redRupee () {
+                if (wins === 0 && losses === 0){
+                    themeMusic.play();
+                    }
+                rupeeSound.play();
                 userNumberSum = userNumberSum + redRupeeStart;
+                console.log('user number sum: ' + userNumberSum);
                 $(".userNumberSum").text(userNumberSum);
                 checkNumbers();
-                console.log('user number sum: ' + userNumberSum);
             }
 
         $(".whiteRupee").on("click", whiteRupee);
 
             function whiteRupee () {
+                if (wins === 0 && losses === 0){
+                    themeMusic.play();
+                    }
+                rupeeSound.play();
                 userNumberSum = userNumberSum + whiteRupeeStart;
+                console.log('user number sum: ' + userNumberSum);
                 $(".userNumberSum").text(userNumberSum);
                 checkNumbers();
-                console.log('user number sum: ' + userNumberSum);
             }
 
         $(".greenRupee").on("click", greenRupee);
 
             function greenRupee () {
+                if (wins === 0 && losses === 0){
+                    themeMusic.play();
+                    }
+                rupeeSound.play();
                 userNumberSum = userNumberSum + greenRupeeStart;
+                console.log('user number sum: ' + userNumberSum);
                 $(".userNumberSum").text(userNumberSum);
                 checkNumbers();
-                console.log('user number sum: ' + userNumberSum);
             }
-
-}
 
 
 //function that compares userNumberSum to winningNumber
@@ -101,8 +120,6 @@ var losses = 0;
     }
 
 startGame();
-// checkNumbers();
-
 
 });
 
